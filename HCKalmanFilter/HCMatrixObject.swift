@@ -14,10 +14,14 @@ class HCMatrixObject
     //MARK: - HCMatrixObject properties
     
     /// Number of Rows in Matrix
-    private var rows: Int
+    var rows: Int {
+        return self.matrix.rows
+    }
     
     /// Number of Columns in Matrix
-    private var columns: Int
+    var columns: Int {
+        return self.matrix.columns
+    }
     
     /// Surge Matrix object
     var matrix: Matrix<Double>
@@ -46,13 +50,7 @@ class HCMatrixObject
         
         for i in 0..<dim
         {
-            for j in 0..<dim
-            {
-                if i == j
-                {
-                    identityMatrix.matrix[i,j] = 1.0
-                }
-            }
+            identityMatrix.matrix[i,i] = 1.0
         }
         
         return identityMatrix
