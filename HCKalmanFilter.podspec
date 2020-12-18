@@ -18,5 +18,5 @@ s.ios.deployment_target = "9.0"
 s.source_files = "HCKalmanFilter/*"
 
 s.dependency 'Surge', '~> 2.3.0'
-
+s.watchos.deployment_target = '5.0'
 end
