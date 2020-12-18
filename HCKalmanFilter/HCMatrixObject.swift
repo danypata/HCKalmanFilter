@@ -14,14 +14,10 @@ class HCMatrixObject
     //MARK: - HCMatrixObject properties
     
     /// Number of Rows in Matrix
-    var rows: Int {
-        return self.matrix.rows
-    }
+    var rows: Int
     
     /// Number of Columns in Matrix
-    var columns: Int {
-        return self.matrix.columns
-    }
+    var columns: Int
     
     /// Surge Matrix object
     var matrix: Matrix<Double>
